@@ -1,0 +1,25 @@
+<mat-toolbar color="primary">
+    <!-- <mat-toolbar-row>
+        <span>Tienda Online</span>
+        <mat-form-field fxFlex appearance="outline">
+            <mat-label>Usuario</mat-label>
+            <input matInput placeholder="Escribe el usuario" formControlName="usuario" name="usuario" required>
+            <mat-icon matSuffix>face</mat-icon>
+        </mat-form-field>
+        <span style="flex: 1 1 auto"></span>
+        <mat-icon *ngIf="userIn">power_settings_new</mat-icon>
+            
+        <button mat-icon-button *ngIf="!userIn" matTooltip="Registrar centro" [matTooltipPosition]="'left'" (click)="redirigirRegistro()">
+            <mat-icon>group_add</mat-icon>
+        </button>
+    </mat-toolbar-row> -->
+    <mat-toolbar-row>
+        <span>Angular Práctica</span>
+        <span style="flex: 1 1 auto"></span>
+        <mat-icon *ngIf="userIn">power_settings_new</mat-icon>
+        
+        <button mat-icon-button *ngIf="!userIn" matTooltip="Registrar centro" [matTooltipPosition]="'left'" (click)="redirigirRegistro()">
+            <mat-icon>group_add</mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>

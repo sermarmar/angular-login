@@ -1,0 +1,28 @@
+
+<div class="login" fxLayout="row" fxLayoutAlign="center center">
+    <div fxFlex="20">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title style="text-align: center">Acceso de Usuario</mat-card-title>
+            </mat-card-header>
+            <mat-card-content style="text-align: center">
+                <form [formGroup]="form" (submit)="accederUsuario()">
+                    <mat-form-field appearance="outline">
+                        <mat-label>Usuario</mat-label>
+                        <input matInput placeholder="Escribe el nombre" formControlName="usuario" name="usuario" required>
+                        <mat-icon matSuffix>face</mat-icon>
+                    </mat-form-field>
+                    <mat-form-field appearance="outline">
+                        <mat-label>Contraseña</mat-label>
+                        <input matInput placeholder="Escribe la contraseña" formControlName="pass" name="pass" required>
+                        <mat-icon matSuffix>https</mat-icon>
+                    </mat-form-field>
+                    <br>
+                    <mat-checkbox formControlName="inCheck" name="inCheck">Recordarme mi contraseña</mat-checkbox>
+                    <br>
+                    <button mat-raised-button color="primary">Acceder</button>
+                </form>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
